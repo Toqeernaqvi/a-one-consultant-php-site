@@ -325,17 +325,17 @@
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">Free Consultancy</h1>
                 <p class="mb-4"></p>We send students to the UK, Australian, USA, and Canadian universities and world wide.</p>
-                <form>
+                <form action="contact_response.php" method="post" name="frm_contact" id="frm_contact">
                     <div class="row gx-3">
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                                <input type="text" class="form-control" id="form-floating-1" name="name" placeholder="John Doe">
                                 <label for="form-floating-1">Full Name</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="form-floating-2" name="email" placeholder="name@example.com">
                                 <label for="form-floating-2">Email address</label>
                             </div>
                         </div>
@@ -343,33 +343,35 @@
 
                         <div class="col-6">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="John Doe">
+                                <input type="text" class="form-control" id="form-floating-2" name="number" placeholder="John Doe">
                                 <label for="form-floating-2">Number</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="John Doe">
+                                <input type="text" class="form-control" id="form-floating-2" name="reasonOfContact" placeholder="John Doe">
                                 <label for="form-floating-2">Reason for contact</label>
                             </div>
                         </div>
 
-
-
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-3" placeholder="John Doe">
-                                <label for="form-floating-1">Detail</label>
-                            </div>
-
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-4" placeholder="John Doe">
+                                <input type="text" class="form-control" id="form-floating-4" name ="subject" placeholder="John Doe">
                                 <label for="form-floating-1">Subject</label>
                             </div>
 
                         </div>
+
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <!-- <input type="text" class="form-control" id="form-floating-3" name ="detail" placeholder="John Doe"> -->
+                                <label for="form-floating-1">Detail</label>
+                                <textarea  name ="detail" class="form-control" placeholder="Detail" id="form-floating-4" style="height: 120px"></textarea>
+
+                            </div>
+
+                        </div>
+                  
 
                         <!-- <div class="col-6">
                             <div class="form-floating">
@@ -381,7 +383,7 @@
                                 <label for="floatingSelect">Select A Service</label>
                             </div>
                         </div>-->
-                        <div class="col-6">
+                        <div class="col-12 mt-2">
                             <button class="btn btn-primary w-100 h-100" type="submit">Request A Call Back</button>
                         </div>
                     </div>
@@ -567,10 +569,10 @@
         <div class="row g-5">
             <div class="col-12 text-center">
                 <h1 class="display-5 mb-4">Stay Update!!!</h1>
-                <form class="mx-auto" style="max-width: 600px;">
+                <form class="mx-auto"  action="subscribe_email_response.php" method="post" style="max-width: 600px;">
                     <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
+                        <input type="email" name="email" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Subscribe</button>
                     </div>
                 </form>
             </div>

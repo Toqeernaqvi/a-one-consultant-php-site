@@ -120,6 +120,21 @@
                                 <label for="form-floating-2">Email address</label>
                             </div>
                         </div>
+
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text"  name="text" class="form-control" id="form-floating-2" placeholder="xxxx-xxxxxxxx">
+                                <label for="form-floating-2">Phone Number</label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text"  name="reasonOfContact" class="form-control" id="form-floating-2">
+                                <label for="form-floating-2">Reason of Contact</label>
+                            </div>
+                        </div>
+
                         <div class="col-12">
                             <div class="form-floating">
                                 <input type="text" name = "subject" class="form-control" id="form-floating-3" placeholder="Subject">
@@ -128,8 +143,8 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea  name ="message" class="form-control" placeholder="Message" id="form-floating-4" style="height: 150px"></textarea>
-                                <label for="form-floating-4">Message</label>
+                                <textarea  name ="detail" class="form-control" placeholder="Details" id="form-floating-4" style="height: 150px"></textarea>
+                                <label for="form-floating-4">Detail</label>
                             </div>
                         </div>
                         <div class="col-12">
